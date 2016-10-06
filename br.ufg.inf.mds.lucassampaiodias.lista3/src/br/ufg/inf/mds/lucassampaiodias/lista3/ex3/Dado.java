@@ -12,18 +12,19 @@ import java.util.Random;
  * @author lucas
  */
 public class Dado {
+
     private int valor;
-    
-    public Dado(){
+
+    public Dado() {
         this.valor = 1;
     }
-    
-    public void jogar(){
+
+    public void jogar() {
         Random random = new Random();
         this.valor = random.nextInt(6) + 1;
     }
-    
-    public int getValor(){
+
+    public int getValor() {
         return this.valor;
     }
 }

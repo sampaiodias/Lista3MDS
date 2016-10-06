@@ -10,41 +10,41 @@ package br.ufg.inf.mds.lucassampaiodias.lista3.ex1;
  * @author lucas
  */
 public class Lampada {
+
     private boolean ligada;
     private boolean conectadaEnergizada;
     private int desgaste;
-    
-    public Lampada(){
+
+    public Lampada() {
         this.ligada = false;
         this.conectadaEnergizada = false;
         this.desgaste = 30;
     }
-    
-    public void interruptor(){
-        if (this.conectadaEnergizada){
-            if (!this.ligada && this.desgaste > 0){
+
+    public void interruptor() {
+        if (this.conectadaEnergizada) {
+            if (!this.ligada && this.desgaste > 0) {
                 this.ligada = true;
-                this.desgaste --;
-            }
-            else{
+                this.desgaste--;
+            } else {
                 this.ligada = false;
             }
         }
     }
-    
-    public void plugar(){
+
+    public void plugar() {
         this.conectadaEnergizada = true;
     }
-    
-    public void desplugar(){
+
+    public void desplugar() {
         this.conectadaEnergizada = false;
     }
-    
-    public boolean isLigada(){
+
+    public boolean isLigada() {
         return this.ligada;
     }
-    
-    public boolean isConectadaEnergizada(){
+
+    public boolean isConectadaEnergizada() {
         return this.conectadaEnergizada;
     }
 }

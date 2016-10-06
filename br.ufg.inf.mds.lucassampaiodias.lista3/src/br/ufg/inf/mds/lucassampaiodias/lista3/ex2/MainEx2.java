@@ -11,21 +11,22 @@ import java.util.Scanner;
  *
  * @author lucas
  */
-public class MainEx2 { 
+public class MainEx2 {
+
     public static void main(String[] args) {
         int x;
         int y;
         int opcao;
-        Scanner leitor = new Scanner (System.in);
-        
+        Scanner leitor = new Scanner(System.in);
+
         System.out.println("Insira o primeiro valor: ");
         x = Integer.parseInt(leitor.nextLine());
         System.out.println("Insira o segundo valor: ");
         y = Integer.parseInt(leitor.nextLine());
         System.out.println("");
-        
+
         Calculadora calc = new Calculadora(x, y);
-        
+
         System.out.println("Insira 1, 2, 3 ou 4 para: ");
         System.out.println("1 - Adição");
         System.out.println("2 - Subtração");
@@ -33,8 +34,8 @@ public class MainEx2 {
         System.out.println("4 - Divisão");
         opcao = Integer.parseInt(leitor.nextLine());
         System.out.println("");
-        
-        switch(opcao){
+
+        switch (opcao) {
             case 1:
                 System.out.println("Resultado: " + calc.adicao());
                 break;

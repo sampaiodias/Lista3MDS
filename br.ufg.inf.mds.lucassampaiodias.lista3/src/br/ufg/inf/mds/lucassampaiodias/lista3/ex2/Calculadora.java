@@ -10,27 +10,28 @@ package br.ufg.inf.mds.lucassampaiodias.lista3.ex2;
  * @author lucas
  */
 public class Calculadora {
+
     private int valor1;
     private int valor2;
-    
-    public Calculadora(int x, int y){
+
+    public Calculadora(int x, int y) {
         this.valor1 = x;
         this.valor2 = y;
     }
-    
-    public int adicao(){
+
+    public int adicao() {
         return this.valor1 + this.valor2;
     }
-    
-    public int subtracao(){
+
+    public int subtracao() {
         return this.valor1 - this.valor2;
     }
-    
-    public int multiplicacao(){
+
+    public int multiplicacao() {
         return this.valor1 * this.valor2;
     }
-    
-    public int divisao(){
+
+    public int divisao() {
         return this.valor1 / this.valor2;
     }
 }
